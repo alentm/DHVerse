@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Fredoka One", cursive;
+}
+
+#textContainer {
+  width: 960px;
+  font-size: 64px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.word {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.letter {
+  display: inline-block;
+  opacity: 1;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+@keyframes letterAnimation {
+  0% {
+    color: rgba(0, 0, 0, 0.1);
+  }
+  30% {
+    color: var(--randomColor);
+  }
+  100% {
+    color: black;
+  }
+}
